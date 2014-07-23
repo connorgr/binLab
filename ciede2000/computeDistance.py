@@ -4,6 +4,11 @@ import math
 import datetime
 import ciede2000 as dist
 
+
+# This program will generate distances delta E distances for all CIE L*a*b*
+#   pairs in ../data/colors.csv. We encourage using the distributed version
+#   as 8325^2 distance values are computed.
+
 colors = []
 header = []
 with open('../data/colors.csv', 'rb') as csvfile:
