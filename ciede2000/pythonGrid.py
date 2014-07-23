@@ -6,6 +6,4 @@ with open('../data/colorsTestPairs.csv', 'rb') as csvfile:
   pairs = []
   for r in reader:
     pairs.append(r[0])
-    call(['clusterComputeDistance', r[0]])
-
-print 'hello, world.'
+    call('./clusterComputeDistance.py '+ r[0], shell=True)

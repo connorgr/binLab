@@ -6,6 +6,7 @@ import ciede2000 as dist
 argv = sys.argv
 
 if len(argv) != 7:
+  print argv
   raise Exception("clusterComputeDistance.py requires two sets of L*a*b* values.")
 
 L1 = float(argv[1])
@@ -20,5 +21,5 @@ Lab1 = [L1, a1, b1]
 Lab2 = [L2, a2, b2]
 
 deltaE = dist.ciede2000(Lab1, Lab2)
-outstr = L1 + ' ' + a1 + ' ' + b1 + ' ' + L2 + ' ' + a2 + ' ' + b2 + ' ' + deltaE
+outstr = str(L1) + ' ' + str(a1) + ' ' + str(b1) + ' ' + str(L2) + ' ' + str(a2) + ' ' + str(b2) + ' ' + str(deltaE)
 print outstr
