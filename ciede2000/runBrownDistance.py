@@ -16,7 +16,7 @@ def distance(L1,a1,b1,L2,a2,b2):
 
 fname = '/home/connor/r/binLab/data/pairs/colorsPairs-'+argv[1]+'.csv'
 with open(fname) as csvfile:
-  reader = csv.reader(csvfile, delimeter=' ')
+  reader = csv.reader(csvfile, delimiter=' ')
   output = [distance(r[0],r[1],r[2],r[3],r[4],r[5]) for r in reader]
   for o in output:
     print o
