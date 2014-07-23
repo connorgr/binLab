@@ -20,6 +20,5 @@ Lab1 = [L1, a1, b1]
 Lab2 = [L2, a2, b2]
 
 deltaE = dist.ciede2000(Lab1, Lab2)
-print L1, a1, b1, L2, a2, b2, deltaE
-# todo: generate text file that only has lower left of combination matrix.
-#   we don't want the diagona land the matrix is symetric
+outstr = L1 + ' ' + a1 + ' ' + b1 + ' ' + L2 + ' ' + a2 + ' ' + b2 + ' ' + deltaE
+print outstr
