@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import sys
 import ciede2000 as dist
 
