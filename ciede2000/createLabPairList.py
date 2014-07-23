@@ -35,7 +35,7 @@ print 'Writing...'
 
 for bin in pairBins:
   index = str(pairBins.index(bin))
-  with open('../data/colorsPairs-'+index+'.csv', 'wb') as csvfile:
+  with open('../data/pairs/colorsPairs-'+index+'.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=' ')
     #Format: ['L1','a1','b1','L2','a2','b2']
     for p in bin:

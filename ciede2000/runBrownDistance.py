@@ -18,4 +18,5 @@ fname = '/home/connor/r/binLab/data/colorsPairs'-argv[1]-'.csv'
 with open(fname) as csvfile:
   reader = csv.reader(csvfile, delimeter=' ')
   output = [distance(r[0],r[1],r[2],r[3],r[4],r[5]) for r in reader]
-  print output
+  for o in output:
+    print o
