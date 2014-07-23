@@ -1,3 +1,4 @@
+import csv
 from subprocess import call
 
 with open('../data/colorsTestPairs.csv', 'rb') as csvfile:
