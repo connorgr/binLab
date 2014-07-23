@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import csv
 import sys
 sys.path.append('/home/connor/r/binLab/ciede2000')
 import ciede2000 as dist
