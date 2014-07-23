@@ -5,7 +5,7 @@ from itertools import combinations
 
 colors = []
 header = []
-with open('../data/colorsTest.csv', 'rb') as csvfile:
+with open('../data/colors.csv', 'rb') as csvfile:
   reader = csv.reader(csvfile)
   header = reader.next()
   for row in reader:
@@ -23,7 +23,7 @@ print len(pairs), 'combinations'
 print 'Took', (timeb - timea).seconds, ' seconds'
 print 'Writing...'
 
-with open('../data/colorsTestPairs.csv', 'wb') as csvfile:
+with open('../data/colorsPairs.csv', 'wb') as csvfile:
   writer = csv.writer(csvfile, delimiter=' ')
   #Format: ['L1','a1','b1','L2','a2','b2']
   for p in pairs:
