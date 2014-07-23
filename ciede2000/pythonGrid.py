@@ -1,7 +1,7 @@
 import csv
 from subprocess import call
 
-for i in range(34):
+for i in range(35):
   gridOutDir = '/home/connor/r/binLab/data/grid'
   qsub = 'qsub -cwd -N "colorDistance" -V -e '+gridOutDir+' -o '+gridOutDir+' -l inf '
   app = '/home/connor/r/binLab/ciede2000/runBrownDistance.py '+ str(i)
