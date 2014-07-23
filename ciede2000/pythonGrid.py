@@ -6,5 +6,6 @@ with open('../data/colorsTestPairs.csv', 'rb') as csvfile:
   pairs = []
   for r in reader:
     pairs.append(r)
+    print r
 
 print 'hello, world.'
